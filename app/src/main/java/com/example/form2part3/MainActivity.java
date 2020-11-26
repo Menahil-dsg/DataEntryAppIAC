@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         panelLayout =  findViewById(R.id.panelLayout);
         panelLayout1 = findViewById(R.id.panelLayout1);
-       // panelLayout2 = findViewById(R.id.panelLayout2);
+        // panelLayout2 = findViewById(R.id.panelLayout2);
         panelLayout2 = findViewById(R.id.panelLayout2);
         panelLayout3 = findViewById(R.id.panelLayout3);
         panelLayout4 = findViewById(R.id.panelLayout4);
@@ -85,6 +85,13 @@ public class MainActivity extends AppCompatActivity {
         Q622 = findViewById(R.id.Q622);
         Q631 = findViewById(R.id.Q631);
         Q632 = findViewById(R.id.Q632);
+
+        Q711 = findViewById(R.id.Q711);
+        Q712 = findViewById(R.id.Q712);
+        Q721 = findViewById(R.id.Q721);
+        Q722 = findViewById(R.id.Q722);
+        Q731 = findViewById(R.id.Q731);
+        Q732 = findViewById(R.id.Q732);
 
         helper = new DatabaseHelper(getApplicationContext());
         db = helper.getWritableDatabase();
@@ -296,11 +303,6 @@ public class MainActivity extends AppCompatActivity {
         values.put(DatabaseHelper.C40, Q722.getText().toString());
         values.put(DatabaseHelper.C41, Q731.getText().toString());
         values.put(DatabaseHelper.C42, Q732.getText().toString());
-
-
-
-
-
 
 
 

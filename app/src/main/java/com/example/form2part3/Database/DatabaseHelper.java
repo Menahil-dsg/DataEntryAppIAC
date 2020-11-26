@@ -97,7 +97,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             ""+C39 +" TEXT," +
             ""+C40 +" TEXT," +
             ""+C41 +" TEXT," +
-
             ""+C42+" TEXT);";
 
 
