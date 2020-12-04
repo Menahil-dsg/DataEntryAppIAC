@@ -6,9 +6,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME ="myDatabase.db";
+
     public static final String TABLE_PART3QUES1 ="part3";
 
-    public static final int DATABASE_VERSION =1;
+    public static final int DATABASE_VERSION =3;
     public static final String C1 ="Q111";
     public static final String C2 ="Q112";
     public static final String C3 ="Q121";
@@ -33,7 +34,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String C22 ="Q422";
     public static final String C23 ="Q431";
     public static final String C24 ="Q432";
-
     public static final String C25 ="Q511";
     public static final String C26 ="Q512";
     public static final String C27 ="Q521";
@@ -52,6 +52,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String C40 ="Q722";
     public static final String C41 ="Q731";
     public static final String C42 ="Q732";
+    public static final String C43 ="Q8";
 
 
     String CREATE_TABLE = "create table "+ TABLE_PART3QUES1 +" (_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
@@ -97,9 +98,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             ""+C39 +" TEXT," +
             ""+C40 +" TEXT," +
             ""+C41 +" TEXT," +
-            ""+C42+" TEXT);";
+            ""+C42 +" TEXT," +
+            ""+C43+" TEXT);";
 
-
+// ""+C42+" TEXT , "+""+C43+");";
 
     //String CREATE_TABLE = "create table "+ TABLE_PART3QUES2 +" (_ID INTEGER PRIMARY KEY AUTOINCREMENT," +
 

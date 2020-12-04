@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,110 +13,115 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FORM2 PART3 QUESTION1 "
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Total Owned Area Of This House "
-            android:textStyle="bold"
-            >
+            android:textStyle="bold">
 
         </TextView>
+
         <CheckBox
+            android:id="@+id/chkNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
             android:layout_gravity="left"
             android:checked="false"
-            android:id="@+id/chkNo">
-        </CheckBox>
+            android:text="No"></CheckBox>
 
         <LinearLayout
+            android:id="@+id/panelLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/panelLayout">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Land"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q111"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q111"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="Kanal"
                     android:id="@+id/Q112"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    ></EditText>
+                    android:layout_weight="1"
+                    android:hint="Kanal"
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Only In This Mouza"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q121"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:id="@+id/Q121"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q122"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:inputType="number"
-                    android:id="@+id/Q122"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Other Mouzas"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q131"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q131"
 
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q132"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:id="@+id/Q132"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
         </LinearLayout>
 
@@ -124,109 +130,112 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FORM2 PART3 QUESTION2 "
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=" Owned Area Which Is Given Gratuitously "
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
 
         <CheckBox
+            android:id="@+id/chkNo1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
             android:layout_gravity="left"
             android:checked="false"
-            android:id="@+id/chkNo1">
-        </CheckBox>
+            android:text="No"></CheckBox>
 
         <LinearLayout
+            android:id="@+id/panelLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/panelLayout1">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Land"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q211"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q211"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="Kanal"
                     android:id="@+id/Q212"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    ></EditText>
+                    android:layout_weight="1"
+                    android:hint="Kanal"
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Only In This Mouza"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q221"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:id="@+id/Q221"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q222"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:inputType="number"
-                    android:id="@+id/Q222"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Other Mouzas"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q231"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q231"
 
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q232"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:id="@+id/Q232"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
         </LinearLayout>
 
@@ -235,594 +244,863 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FORM2 PART3 QUESTION3 "
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Remaining Owned Area "
-            android:textStyle="bold"
-            >
+            android:textStyle="bold">
 
         </TextView>
+
         <CheckBox
+            android:id="@+id/chkNo2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
             android:layout_gravity="left"
             android:checked="false"
-            android:id="@+id/chkNo2">
-        </CheckBox>
+            android:text="No"></CheckBox>
 
         <LinearLayout
+            android:id="@+id/panelLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/panelLayout2">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Land"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q311"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q311"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="Kanal"
                     android:id="@+id/Q312"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    ></EditText>
+                    android:layout_weight="1"
+                    android:hint="Kanal"
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Only In This Mouza"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q321"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:id="@+id/Q321"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q322"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:inputType="number"
-                    android:id="@+id/Q322"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Other Mouzas"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q331"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q331"
 
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q332"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:id="@+id/Q332"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
         </LinearLayout>
-
-
-
-
-
-
-
-
-
-
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FORM2 PART3 QUESTION4 "
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Area on Apportionment "
-            android:textStyle="bold"
-            >
+            android:textStyle="bold">
 
         </TextView>
+
         <CheckBox
+            android:id="@+id/chkNo3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
             android:layout_gravity="left"
             android:checked="false"
-            android:id="@+id/chkNo3">
-        </CheckBox>
+            android:text="No"></CheckBox>
 
         <LinearLayout
+            android:id="@+id/panelLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/panelLayout3">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Land"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q411"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q411"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="Kanal"
                     android:id="@+id/Q412"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    ></EditText>
+                    android:layout_weight="1"
+                    android:hint="Kanal"
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Only In This Mouza"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q421"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:id="@+id/Q421"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q422"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:inputType="number"
-                    android:id="@+id/Q422"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Other Mouzas"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q431"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q431"
 
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q432"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:id="@+id/Q432"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
         </LinearLayout>
-
-
-
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FORM2 PART3 QUESTION5 "
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Area on Apportionment "
-            android:textStyle="bold"
-            >
+            android:textStyle="bold">
 
         </TextView>
+
         <CheckBox
+            android:id="@+id/chkNo4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
             android:layout_gravity="left"
             android:checked="false"
-            android:id="@+id/chkNo4">
-        </CheckBox>
+            android:text="No"></CheckBox>
 
         <LinearLayout
+            android:id="@+id/panelLayout4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/panelLayout4">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Land"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q511"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q511"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="Kanal"
                     android:id="@+id/Q512"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    ></EditText>
+                    android:layout_weight="1"
+                    android:hint="Kanal"
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Only In This Mouza"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q521"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:id="@+id/Q521"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q522"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:inputType="number"
-                    android:id="@+id/Q522"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Other Mouzas"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q531"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q531"
 
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q532"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:id="@+id/Q532"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
         </LinearLayout>
-
-
-
-
-
-
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FORM2 PART3 QUESTION6 "
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Other Area Not Mentioned Above "
-            android:textStyle="bold"
-            >
+            android:textStyle="bold">
 
         </TextView>
+
         <CheckBox
+            android:id="@+id/chkNo5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
             android:layout_gravity="left"
             android:checked="false"
-            android:id="@+id/chkNo5">
-        </CheckBox>
+            android:text="No"></CheckBox>
 
         <LinearLayout
+            android:id="@+id/panelLayout5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/panelLayout5">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Land"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q611"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q611"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="Kanal"
                     android:id="@+id/Q612"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    ></EditText>
+                    android:layout_weight="1"
+                    android:hint="Kanal"
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Only In This Mouza"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q621"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:id="@+id/Q621"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q622"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:inputType="number"
-                    android:id="@+id/Q622"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Other Mouzas"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q631"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q631"
 
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q632"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:id="@+id/Q632"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
         </LinearLayout>
-
-
-
-
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="FORM2 PART3 QUESTION7 "
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <TextView
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Total Occupied Area "
-            android:textStyle="bold"
-            >
+            android:textStyle="bold">
 
         </TextView>
+
         <CheckBox
+            android:id="@+id/chkNo6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
             android:layout_gravity="left"
             android:checked="false"
-            android:id="@+id/chkNo6">
-        </CheckBox>
+            android:text="No"></CheckBox>
 
         <LinearLayout
+            android:id="@+id/panelLayout6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/panelLayout6">
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Total Land"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q711"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q711"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:inputType="number"
-                    android:hint="Kanal"
                     android:id="@+id/Q712"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    ></EditText>
+                    android:layout_weight="1"
+                    android:hint="Kanal"
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Only In This Mouza"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q721"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:id="@+id/Q721"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q722"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:inputType="number"
-                    android:id="@+id/Q722"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
             </LinearLayout>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Other Mouzas"></TextView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
+
                 <EditText
+                    android:id="@+id/Q731"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Acre"
-                    android:inputType="number"
-                    android:id="@+id/Q731"
 
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
                 <EditText
+                    android:id="@+id/Q732"
                     android:layout_width="0dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Kanal"
-                    android:id="@+id/Q732"
-                    android:inputType="number"
-                    android:layout_height="wrap_content"
-                    ></EditText>
+                    android:inputType="number"></EditText>
+
             </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FORM2 PART3 QUESTION8 "
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Area (Ques7 Count) "
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <EditText
+                    android:id="@+id/Q8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Count"
+                    android:inputType="number"></EditText>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FORM2 PART3 QUESTION9 "
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Written Agreement by 2"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/chkNo7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="YES"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/chkNo8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="NO"></CheckBox>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FORM2 PART3 QUESTION10 "
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Written Agreement by 4/5 "
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/chkNo9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="YES"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/chkNo10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="NO"></CheckBox>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FORM2 PART3 QUESTION11 "
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Previous Occupied Area  "
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/chkNo11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="YES"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/chkNo12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="NO"></CheckBox>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FORM2 PART3 QUESTION12 "
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If Ques11 Is No  "
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+
+                    android:id="@+id/Q1201"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Acre"
+
+                    android:inputType="number"></EditText>
+
+                <EditText
+                    android:id="@+id/Q1202"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Kanal"
+                    android:inputType="number"></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FORM2 PART3 QUESTION13 "
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reasons To Give Owned Area  "
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/chkNo13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="YES"></CheckBox>
+                <CheckBox
+                    android:id="@+id/chkNo14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="NO"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/chkNo15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="YES"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/chkNo16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="NO"></CheckBox>
+                <CheckBox
+                    android:id="@+id/chkNo17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="YES"></CheckBox>
+                <CheckBox
+                    android:id="@+id/chkNo18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="NO"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/chkNo19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="YES"></CheckBox>
+
+                <CheckBox
+                    android:id="@+id/chkNo20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:text="NO"></CheckBox>
+
+            </LinearLayout>
+
         </LinearLayout>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add"
             android:layout_gravity="left"
-            android:onClick="AddFormData1"></Button>
-
-
-
-
-
-
-
-
+            android:onClick="AddFormData1"
+            android:text="Add"></Button>
 
 
     </LinearLayout>

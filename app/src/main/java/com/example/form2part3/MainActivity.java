@@ -12,17 +12,18 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.form2part3.Database.DatabaseHelper;
-
 public class MainActivity extends AppCompatActivity {
 
     DatabaseHelper helper;
     SQLiteDatabase db;
     LinearLayout panelLayout,panelLayout1, panelLayout2, panelLayout3, panelLayout4, panelLayout5, panelLayout6 ;
     CheckBox chkNo, chkNo1,chkNo2, chkNo3, chkNo4, chkNo5, chkNo6;
-    EditText Q111,Q112,Q121,Q122,Q131,Q132, Q211,Q212,Q221,Q222,Q231,Q232, Q311,Q312,Q321,Q322,Q331,Q332, Q411,Q412,Q421,Q422,Q431,Q432,Q511,Q512,Q521,Q522,Q531,Q532, Q611,Q612,Q621,Q622,Q631,Q632, Q711,Q712,Q721,Q722,Q731,Q732;
+    EditText Q111,Q112,Q121,Q122,Q131,Q132, Q211,Q212,Q221,Q222,Q231,Q232, Q311,Q312,Q321,Q322,Q331,Q332, Q411,Q412,Q421,Q422,Q431,Q432,Q511,Q512,Q521,Q522,Q531,Q532, Q611,Q612,Q621,Q622,Q631,Q632, Q711,Q712,Q721,Q722,Q731,Q732,Q8;
     ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         panelLayout =  findViewById(R.id.panelLayout);
@@ -33,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
         panelLayout4 = findViewById(R.id.panelLayout4);
         panelLayout5 = findViewById(R.id.panelLayout5);
         panelLayout6 = findViewById(R.id.panelLayout6);
-
-
 
         chkNo = findViewById(R.id.chkNo);
         chkNo1 = findViewById(R.id.chkNo1);
@@ -92,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         Q722 = findViewById(R.id.Q722);
         Q731 = findViewById(R.id.Q731);
         Q732 = findViewById(R.id.Q732);
+        Q8 = findViewById(R.id.Q8);
 
         helper = new DatabaseHelper(getApplicationContext());
         db = helper.getWritableDatabase();
@@ -254,6 +254,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void AddFormData1(View view) {
+        try {
+
+
 
         ContentValues values = new ContentValues();
         values.put(DatabaseHelper.C1, Q111.getText().toString());
@@ -262,12 +265,14 @@ public class MainActivity extends AppCompatActivity {
         values.put(DatabaseHelper.C4, Q122.getText().toString());
         values.put(DatabaseHelper.C5, Q131.getText().toString());
         values.put(DatabaseHelper.C6, Q132.getText().toString());
+
         values.put(DatabaseHelper.C7, Q211.getText().toString());
         values.put(DatabaseHelper.C8, Q212.getText().toString());
         values.put(DatabaseHelper.C9, Q221.getText().toString());
         values.put(DatabaseHelper.C10, Q222.getText().toString());
         values.put(DatabaseHelper.C11, Q231.getText().toString());
         values.put(DatabaseHelper.C12, Q232.getText().toString());
+
         values.put(DatabaseHelper.C13, Q311.getText().toString());
         values.put(DatabaseHelper.C14, Q312.getText().toString());
         values.put(DatabaseHelper.C15, Q321.getText().toString());
@@ -281,7 +286,6 @@ public class MainActivity extends AppCompatActivity {
         values.put(DatabaseHelper.C22, Q422.getText().toString());
         values.put(DatabaseHelper.C23, Q431.getText().toString());
         values.put(DatabaseHelper.C24, Q432.getText().toString());
-
 
         values.put(DatabaseHelper.C25, Q511.getText().toString());
         values.put(DatabaseHelper.C26, Q512.getText().toString());
@@ -303,13 +307,13 @@ public class MainActivity extends AppCompatActivity {
         values.put(DatabaseHelper.C40, Q722.getText().toString());
         values.put(DatabaseHelper.C41, Q731.getText().toString());
         values.put(DatabaseHelper.C42, Q732.getText().toString());
-
-
-
-
+        values.put(DatabaseHelper.C43, Q8.getText().toString());
 
         long rows =   db.insert(DatabaseHelper.TABLE_PART3QUES1,null, values);
-        Toast.makeText(getApplicationContext(), rows +" inserted", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), rows +" inserted", Toast.LENGTH_LONG).show(); }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
 
